@@ -19,7 +19,7 @@
   gap: 8px;
   overflow-y: scroll;
   height: min-content;
-  max-height: 200px;
+  max-height: 180px;
 }
 
 .scroll {
