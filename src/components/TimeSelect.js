@@ -34,7 +34,7 @@ const TimeSelect = ({ value, onChange }) => {
         onChange(timeSelected);
       }
     }
-  }, [hour, minute, amPm, value]);
+  }, [hour, minute, amPm, value, onChange]);
 
   return (
     <Box className="timeSelect">
