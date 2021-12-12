@@ -22,14 +22,14 @@ const MINUTES = [
 const AMPM = ["AM", "PM"];
 
 const TimeSelect = ({ value, onChange }) => {
-  const [hour, setHour] = useState(value.format("hh"));
+  const [hour, setHour] = useState(value.format("h"));
   const [minute, setMinute] = useState(value.format("mm"));
   const [amPm, setAmPm] = useState(value.format("A"));
 
   const handleClick = (setter) => (e) => setter(e.target.innerHTML);
 
   useEffect(() => {
-    const timeSelected = moment(`${hour}:${minute} ${amPm}`, "hh:mm A");
+    const timeSelected = moment(`${hour}:${minute} ${amPm}`, "h:mm A");
 
     if (timeSelected.isValid()) {
       if (!timeSelected.isSame(value, "minute")) {
