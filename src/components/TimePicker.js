@@ -29,6 +29,8 @@ export default function MuiAlternateTimePicker({ value, onChange, labelText }) {
         />
       </LocalizationProvider>
       <CustomPicker
+        value={value}
+        onChange={onChange}
         open={customPickerOpen}
         anchorEl={input.current}
         onClose={togglePicker}

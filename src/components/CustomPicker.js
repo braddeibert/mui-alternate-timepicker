@@ -2,7 +2,15 @@ import { Popper, Paper, ClickAwayListener } from "@mui/material";
 import TimeSelect from "./TimeSelect";
 import "./styles.css";
 
-const CustomPicker = ({ open, anchorEl, onClose, PopperProps, PaperProps }) => {
+const CustomPicker = ({
+  value,
+  onChange,
+  open,
+  anchorEl,
+  onClose,
+  PopperProps,
+  PaperProps,
+}) => {
   return open ? (
     <ClickAwayListener onClickAway={onClose}>
       <Popper
@@ -12,7 +20,7 @@ const CustomPicker = ({ open, anchorEl, onClose, PopperProps, PaperProps }) => {
         {...PopperProps}
       >
         <Paper className="picker" {...PaperProps}>
-          <TimeSelect />
+          <TimeSelect value={value} onChange={onChange} />
         </Paper>
       </Popper>
     </ClickAwayListener>
