@@ -1,13 +1,32 @@
-import "./styles.css";
+import { Button } from "@mui/material";
 
 const SelectOption = ({ value, onClick, isActive }) => {
+  const sharedStyles = {
+    width: 36,
+    height: 36,
+    borderRadius: "50%",
+    minWidth: "unset",
+  };
+
   return (
-    <span
-      className={isActive ? "selectOption active" : "selectOption"}
+    <Button
       onClick={onClick}
+      sx={
+        isActive
+          ? {
+              color: "common.white",
+              backgroundColor: "primary.main",
+              ...sharedStyles,
+            }
+          : {
+              color: "common.black",
+              backgroundColor: "grey.200",
+              ...sharedStyles,
+            }
+      }
     >
       {value}
-    </span>
+    </Button>
   );
 };
 

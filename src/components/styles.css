@@ -12,34 +12,16 @@
 }
 
 .emptyHeading {
-  height: 28px;
+  height: 32px;
 }
 
 .selectList {
   gap: 8px;
   overflow-y: scroll;
   height: min-content;
-  max-height: 180px;
+  max-height: 175px;
 }
 
 .scroll {
   padding-right: 12px;
-}
-
-.selectOption {
-  display: inline-flex;
-  width: 36px;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #000;
-  border-radius: 50%;
-}
-
-.selectOption:hover {
-  background: lightgray;
-}
-
-.selectOption.active {
-  background: grey;
 }
