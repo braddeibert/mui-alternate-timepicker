@@ -17,11 +17,16 @@ const SelectOption = ({ value, onClick, isActive }) => {
               color: "common.white",
               backgroundColor: "primary.main",
               ...sharedStyles,
+              "&:hover": {
+                backgroundColor: "primary.main",
+              },
             }
           : {
               color: "common.black",
-              backgroundColor: "grey.200",
               ...sharedStyles,
+              "&:hover": {
+                backgroundColor: "grey.200",
+              },
             }
       }
     >
