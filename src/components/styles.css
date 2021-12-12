@@ -1,0 +1,45 @@
+.timeSelect {
+  padding: 8px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.selectListHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0px;
+}
+
+.emptyHeading {
+  height: 28px;
+}
+
+.selectList {
+  gap: 8px;
+  overflow-y: scroll;
+  height: min-content;
+  max-height: 200px;
+}
+
+.scroll {
+  padding-right: 12px;
+}
+
+.selectOption {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.selectOption:hover {
+  background: lightgray;
+}
+
+.selectOption.active {
+  background: grey;
+}

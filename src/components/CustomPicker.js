@@ -1,5 +1,6 @@
 import { Popper, Paper, ClickAwayListener } from "@mui/material";
-import "./customPicker.css";
+import TimeSelect from "./TimeSelect";
+import "./styles.css";
 
 const CustomPicker = ({ open, anchorEl, onClose, PopperProps, PaperProps }) => {
   return open ? (
@@ -11,7 +12,7 @@ const CustomPicker = ({ open, anchorEl, onClose, PopperProps, PaperProps }) => {
         {...PopperProps}
       >
         <Paper className="picker" {...PaperProps}>
-          testing
+          <TimeSelect />
         </Paper>
       </Popper>
     </ClickAwayListener>
