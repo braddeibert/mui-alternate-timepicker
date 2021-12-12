@@ -1,4 +1,6 @@
 .App {
   text-align: center;
   margin: 32px;
+  display: grid;
+  gap: 16px;
 }
