@@ -2,7 +2,7 @@
   "name": "mui-alternate-timepicker",
   "author": "braddeibert",
   "description": "A MaterialUI TimePicker component with an alternative picker widget.",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.3",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
