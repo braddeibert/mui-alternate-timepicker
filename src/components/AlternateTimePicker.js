@@ -1,11 +1,12 @@
 import TextField from "@mui/material/TextField";
+import PropTypes from "prop-types";
 import AdapterMoment from "@mui/lab/AdapterMoment";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import MuiTimePicker from "@mui/lab/TimePicker";
 import { useState, useRef } from "react";
 import CustomPicker from "./CustomPicker";
 
-export default function MuiAlternateTimePicker({ value, onChange, labelText }) {
+const AlternateTimePicker = ({ value, onChange, labelText }) => {
   const input = useRef();
 
   const [customPickerOpen, setCustomPickerOpen] = useState(false);
@@ -28,13 +29,28 @@ export default function MuiAlternateTimePicker({ value, onChange, labelText }) {
           }}
         />
       </LocalizationProvider>
-      <CustomPicker
-        value={value}
-        onChange={onChange}
-        open={customPickerOpen}
-        anchorEl={input.current}
-        onClose={togglePicker}
-      />
+      {input.current && (
+        <CustomPicker
+          value={value}
+          onChange={onChange}
+          open={customPickerOpen}
+          anchorEl={input.current}
+          onClose={togglePicker}
+        />
+      )}
     </>
   );
-}
+};
+
+AlternateTimePicker.defaultProps = {
+  value: null,
+  labelText: null,
+};
+
+AlternateTimePicker.propTypes = {
+  value: PropTypes.object,
+  onChange: PropTypes.func.isRequired,
+  labelText: PropTypes.string,
+};
+
+export default AlternateTimePicker;

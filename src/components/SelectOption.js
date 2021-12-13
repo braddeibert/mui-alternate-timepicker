@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import PropTypes from "prop-types";
 
 const SelectOption = ({ value, onClick, isActive }) => {
   const sharedStyles = {
@@ -33,6 +34,16 @@ const SelectOption = ({ value, onClick, isActive }) => {
       {value}
     </Button>
   );
+};
+
+SelectOption.defaultProps = {
+  isActive: false,
+};
+
+SelectOption.propTypes = {
+  value: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isActive: PropTypes.bool,
 };
 
 export default SelectOption;

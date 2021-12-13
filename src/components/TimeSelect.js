@@ -3,6 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import SelectOption from "./SelectOption";
 import "./styles.css";
 import moment from "moment";
+import PropTypes from "prop-types";
 
 const HOURS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 const MINUTES = [
@@ -83,6 +84,15 @@ const TimeSelect = ({ value, onChange }) => {
       </Box>
     </Box>
   );
+};
+
+TimeSelect.defaultProps = {
+  value: null,
+};
+
+TimeSelect.propTypes = {
+  value: PropTypes.object,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default TimeSelect;
