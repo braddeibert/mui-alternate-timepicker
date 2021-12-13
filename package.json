@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/braddeibert/mui-alternate-timepicker"
+    "url": "git+https://github.com/braddeibert/mui-alternate-timepicker.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -74,5 +74,16 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.9"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/braddeibert/mui-alternate-timepicker/issues"
+  },
+  "homepage": "https://github.com/braddeibert/mui-alternate-timepicker#readme",
+  "keywords": [
+    "timepicker",
+    "mui",
+    "mui-timepicker",
+    "react"
+  ],
+  "license": "MIT"
 }
