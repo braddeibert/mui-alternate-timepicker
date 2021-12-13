@@ -20,13 +20,7 @@
     "@emotion/styled": "^11.6.0",
     "@mui/lab": "^5.0.0-alpha.59",
     "@mui/material": "^5.2.3",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
+    "moment": "^2.29.1"
   },
   "scripts": {
     "dev": "npm run storybook",
@@ -73,7 +67,13 @@
     "@storybook/addon-links": "^6.4.9",
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.9"
+    "@storybook/react": "^6.4.9",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
   },
   "bugs": {
     "url": "https://github.com/braddeibert/mui-alternate-timepicker/issues"
